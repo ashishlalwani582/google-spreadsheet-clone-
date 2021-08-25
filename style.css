@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.title-bar {
+  width: 100%;
+  height: 3.5%;
+  background-color: forestgreen;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.menu-bar {
+  width: 100%;
+  height: 4%;
+  background-color: forestgreen;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar p {
+  height: 100%;
+  margin: 0;
+  width: 6%;
+  margin-left: 10px;
+  font-size: smaller;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p:hover {
+  background-color: white;
+  color: black !important;
+  cursor: pointer;
+}
+
+.menu-bar-options-selected {
+  background-color: white;
+  color: black !important;
+  cursor: pointer;
+}
+
+.menu-options {
+  height: 8%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.formula-bar {
+  height: 4%;
+  width: 100%;
+  background-color: yellow;
+}
+
+.formula-bar input {
+  height: 100%;
+}
+
+#selected-cell {
+  width: 15%;
+  outline: none;
+  border: 1px solid green;
+}
+#complete-formula {
+  width: 85%;
+  outline: none;
+  border: 1px solid green;
+}
+
+.grid {
+  height: 76.5%;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.sheets-bar {
+  height: 4%;
+  width: 100%;
+  border: 1px solid green;
+}
+
+.sheets-bar div {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  font-family: sans-serif;
+  color: green;
+  outline: none;
+  font-size: smaller;
+}
+
+.menu-options div {
+  border: 2px solid;
+  height: 100%;
+}
+
+.bui {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-styles {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.colors,
+.alignment {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cell-font-family {
+  outline: none;
+  height: 1.5rem;
+}
+
+#cell-font-size {
+  outline: none;
+  height: 1.5rem;
+}
+
+/* .blank-corner {
+} */
+.column-tags {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.column-tags-atke {
+  position: fixed !important;
+  top: 19.5vh !important;
+  left: 30px !important;
+  z-index: 3 !important;
+}
+.column-tag-cell {
+  height: 30px;
+  width: 80px;
+  color: white;
+  background-color: forestgreen !important;
+  border: 1px solid white;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.blank-corner {
+  position: fixed;
+  top: 19.5vh;
+  left: 0;
+  z-index: 3;
+  height: 30px;
+  width: 30px;
+  background-color: forestgreen;
+}
+
+.row-number-cell {
+  height: 30px;
+  width: 30px;
+  border: 1px solid;
+  color: white;
+  background-color: forestgreen !important;
+}
+
+.row {
+  display: flex;
+}
+.cell {
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #079992;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.row-numbers {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.row-numbers-atke {
+  position: fixed !important;
+  z-index: 3 !important;
+  top: 30px !important;
+}
+
+.grid-selected-cell {
+  border: 3px solid green;
+}
